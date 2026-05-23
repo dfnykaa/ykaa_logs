@@ -1,7 +1,7 @@
 local function SendWebhook(webhookUrl, payload)
     PerformHttpRequest(webhookUrl, function(statusCode, responseText)
         if statusCode ~= 204 then
-            print("^6[YKAA LOGS] ^3[WARNING] Webhook error)
+            print("^6[YKAA LOGS] ^3[WARNING] Webhook error")
         end
     end, "POST", json.encode(payload), { ["Content-Type"] = "application/json" })
 end
