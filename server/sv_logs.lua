@@ -92,8 +92,8 @@ AddEventHandler("explosionEvent", function(source, ev)
     SendLog(Locales[lang]["explosion_title"],
         "**" .. Locales[lang]["player"] .. ":** " .. pName .. "\n" ..
         "**" .. Locales[lang]["discord"] .. ":** " .. discord .. "\n\n" ..
-        "**Typ:** " .. expName .. "\n" ..
-        "**Pozice:** `" .. pos .. "`"
+        "**Type:** " .. expName .. "\n" ..
+        "**Position:** `" .. pos .. "`"
     )
 end)
 
